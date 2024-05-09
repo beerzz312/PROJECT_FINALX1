@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add custom styles here */
+        /* For example:
+        body {
+            padding-top: 50px;
+        }
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">TokenLine App</h1>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="tokenInput" placeholder="Enter token" />
+            <button class="btn btn-primary mt-2" id="addButton">Add Token</button>
+        </div>
+        <ul id="tokenList" class="list-group"></ul>
+
+        <h1 class="mt-5">Camera Management</h1>
+        <form id="cameraForm" class="mb-3">
+            <div class="form-group">
+                <input type="text" class="form-control" id="number" placeholder="Camera Number">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="ip" placeholder="IP Address">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Add Camera</button>
+        </form>
+
+        <h1 class="mt-5">Update Camera</h1>
+        <form id="updateCameraForm">
+            <div class="form-group">
+                <label for="updateNumber">Camera Number:</label>
+                <input type="text" class="form-control" id="updateNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="updateIp">IP Address:</label>
+                <input type="text" class="form-control" id="updateIp" required>
+            </div>
+            <div class="form-group">
+                <label for="updateUsername">Username:</label>
+                <input type="text" class="form-control" id="updateUsername" required>
+            </div>
+            <div class="form-group">
+                <label for="updatePassword">Password:</label>
+                <input type="password" class="form-control" id="updatePassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Camera</button>
+        </form>
+
+        <div id="cameras"></div>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <!-- jQuery (optional) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <!-- Popper.js (optional) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> -->
+    <script src="./static/script.js"></script>
+</body>
+</html>
